@@ -40,7 +40,7 @@ echo "(*) Haciendo ping a los servidores contenidos en el archivo "$1", por favo
 echo
  
 while read IP
-#do
+do
    ping -c 3 "$IP" >& /dev/null
    
  if [ "$?" != "0" ] ; then   # Houston, tenemos un problema.
